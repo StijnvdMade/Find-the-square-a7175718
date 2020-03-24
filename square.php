@@ -6,7 +6,6 @@ foreach ($newinput as $key => $value) {
     $letters = str_split($value);
     for ($i=0; $i < count($letters)-1; $i++) { 
         if ($letters[$i] == $letters[$i+1]) {
-            // echo("2 achter elkaar");
             $combo = array($i, $key, $letters[$i]);
             array_push($combos, $combo);
         }
